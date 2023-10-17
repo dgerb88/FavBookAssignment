@@ -46,7 +46,7 @@ class BookFormTableViewController: UITableViewController {
         guard let title = titleTextField.text,
             let author = authorTextField.text,
             let genre = genreTextField.text,
-            let length = lengthTextField.text else {return}
+            let length = lengthTextField.text else { return }
         
         book = Book(title: title, author: author, genre: genre, length: length)
         performSegue(withIdentifier: "UnwindToBookTable", sender: self)

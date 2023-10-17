@@ -33,7 +33,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-Nz-bRM">
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-Nz-bRM">
                                                     <rect key="frame" x="0.0" y="34" width="390" height="20.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbF-q7-0WB">
@@ -235,7 +235,6 @@
                                                     <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                                     <connections>
                                                         <action selector="saveButtonTapped:" destination="al5-I3-Gge" eventType="touchUpInside" id="zDw-yt-ieu"/>
-                                                        <segue destination="S3J-d6-aP1" kind="unwind" identifier="UnwindToBookTable" unwindAction="prepareForUnwindWithSegue:" id="m2J-WK-7hO"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -259,6 +258,7 @@
                         <outlet property="genreTextField" destination="A1v-N4-tnP" id="MGL-ba-RCM"/>
                         <outlet property="lengthTextField" destination="cOR-45-sbM" id="Ngy-oY-fII"/>
                         <outlet property="titleTextField" destination="M4A-8z-eCP" id="d6e-pf-FRq"/>
+                        <segue destination="S3J-d6-aP1" kind="unwind" identifier="UnwindToBookTable" unwindAction="prepareForUnwindWithSegue:" id="Y2G-gb-grQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwA-Ne-MIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
